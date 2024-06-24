@@ -1,3 +1,20 @@
+:root {
+  --white: #fff;
+  --border-blue-dark: #2B81AC;
+  --bg-blue-light: #3399CC;
+  --lisabon: #3399CC;
+  --paris: #33CCCC;
+  --belgrade: #33CCCC;
+  --venice: #C24747;
+  --tel-avive: #E2674A;
+  --cair: #E2674A;
+  --new-york: #99CC99;
+  --new-delhi: #669999;
+  --san-francisco: #CC6699;
+  --tokyo: #339966;
+  --sydney: #666699;
+}
+
 /* 
 CSS NORMALIZE 
 */
@@ -12,10 +29,10 @@ CSS NORMALIZE
 
 body {
   font-family: "Lucida Sans Unicode", sans-serif;
-  color: #fff;
+  color: var(--white);
   height: 100hv;
-  background-color: #3399cc;
-  border: 25px solid #2b81ac;
+  background-color: var(--bg-blue-light);
+  border: 25px solid var(--border-blue-dark);
   outline-style: solid;
 }
 
@@ -40,23 +57,30 @@ image {
 MAIN
 */
 
-h3 {
-  font-size: 21px;
-  padding: 66px 4px 37px 135px;
-}
-
-img {
-  width: 27px;
-  height: auto;
-}
-
-.title {
-  display: flex;
+main {
+  height: 90vh;
 }
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 50px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-right: 4px;
+}
+
+/* How to change color (black -> white)? Property "fill" doesn't work. */
+img {
+  width: 42px;
+  height: auto;
 }
 
 .items {
@@ -67,7 +91,7 @@ img {
 .items li {
   display: inline-block;
   padding: 26px 0;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   text-align: center;
   font-size: 22px;
   outline-style: solid;
@@ -82,7 +106,7 @@ img {
   opacity: 1;
 }
 
-.items i {
+.items img {
   font-size: 42px;
   vertical-align: middle;
 }
