@@ -1,0 +1,215 @@
+:root {
+  --white: #fff;
+  --border-blue-dark: #2B81AC;
+  --bg-blue-light: #3399CC;
+  --lisabon: #3399CC;
+  --paris: #33CCCC;
+  --belgrade: #33CCCC;
+  --venice: #C24747;
+  --tel-avive: #E2674A;
+  --cair: #E2674A;
+  --new-york: #99CC99;
+  --new-delhi: #669999;
+  --san-francisco: #CC6699;
+  --tokyo: #339966;
+  --sydney: #666699;
+}
+
+/* 
+CSS NORMALIZE 
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans Unicode", sans-serif;
+  color: var(--white);
+  height: 100hv;
+  background-color: var(--bg-blue-light);
+  border: 25px solid var(--border-blue-dark);
+  outline-style: solid;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+MAIN
+*/
+
+main {
+  height: 90vh;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 50px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-right: 4px;
+}
+
+/* How to change color (black -> white)? Property "fill" doesn't work. */
+img {
+  width: 42px;
+  height: auto;
+}
+
+.items {
+  font-size: 0;
+  width: 100%;
+}
+
+.items li {
+  display: inline-block;
+  padding: 26px 0;
+  border: 2px solid var(--white);
+  text-align: center;
+  font-size: 22px;
+  outline-style: solid;
+}
+
+.items div {
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+.items li:hover div {
+  opacity: 1;
+}
+
+.items img {
+  font-size: 42px;
+  vertical-align: middle;
+}
+
+.lisbon {
+  width: 50%;
+  background-color: #70b8db;
+}
+
+.lisbon:hover {
+  background-color: #3399cc;
+}
+
+.paris {
+  width: 25%;
+  background-color: #70dbdb;
+}
+
+.paris:hover {
+  background-color: #33cccc;
+}
+
+.belgrade {
+  width: 25%;
+  background-color: #b894b8;
+}
+
+.belgrade:hover {
+  background-color: #996699;
+}
+
+.venice {
+  width: 25%;
+  background-color: #c46767;
+}
+
+.venice:hover {
+  background-color: #cc3333;
+}
+
+.tel-aviv {
+  width: 25%;
+  background-color: #eb9580;
+}
+
+.tel-aviv:hover {
+  background-color: #e2674a;
+}
+
+.cair {
+  width: 25%;
+  background-color: #ffdb94;
+}
+
+.cair:hover {
+  background-color: #ffcc66;
+}
+
+.new-york {
+  width: 25%;
+  background-color: #b8dbb8;
+}
+
+.new-york:hover {
+  background-color: #99cc99;
+}
+
+.new-delhi {
+  width: 25%;
+  background-color: #94b8b8;
+}
+
+.new-delhi:hover {
+  background-color: #669999;
+}
+
+.san-francisco {
+  width: 50%;
+  background-color: #db94b8;
+}
+
+.san-francisco:hover {
+  background-color: #cc6699;
+}
+
+.tokyo {
+  width: 25%;
+  background-color: #70b894;
+}
+
+.tokyo:hover {
+  background-color: #339966;
+}
+
+.sydney {
+  width: 100%;
+  background-color: #9494b8;
+}
+
+.sydney:hover {
+  background-color: #666699;
+}
+
+p {
+  margin-top: 35px;
+}
