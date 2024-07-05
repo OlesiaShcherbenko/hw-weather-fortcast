@@ -83,6 +83,12 @@ img {
   height: auto;
 }
 
+.weather-icon {
+  width: 42px;
+  height: auto;
+  fill:var(--white) ;
+}
+
 .items {
   font-size: 0;
   width: 100%;
@@ -106,7 +112,7 @@ img {
   opacity: 1;
 }
 
-.items img {
+.items svg {
   font-size: 42px;
   vertical-align: middle;
 }
